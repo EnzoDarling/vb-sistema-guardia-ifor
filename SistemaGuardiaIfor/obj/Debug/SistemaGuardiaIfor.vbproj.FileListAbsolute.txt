@@ -1,0 +1,28 @@
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.exe
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.pdb
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.xml
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Form1.resources
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Form2.resources
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Resources.resources
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.vbproj.GenerateResource.Cache
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.exe
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.xml
+C:\Users\nicol\AppData\Local\Temporary Projects\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.pdb
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.exe
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.xml
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.pdb
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.exe
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.pdb
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.xml
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Resources.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.vbproj.GenerateResource.Cache
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.LoginForm1.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Principal.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.exe.config
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Personal.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevoPersonal.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Usuarios.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevoUsuario.resources
+D:\Users\nicol\Documents\Visual Studio 2008\Projects\SistemaGuardiaIfor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevaGuardia.resources
