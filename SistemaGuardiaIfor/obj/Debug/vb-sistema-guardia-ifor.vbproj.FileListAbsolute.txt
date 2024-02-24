@@ -1,0 +1,17 @@
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.exe.config
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.xml
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.pdb
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.exe
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.pdb
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.xml
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\ResolveAssemblyReference.cache
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevaGuardia.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevoPersonal.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Personal.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.LoginForm1.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Principal.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Resources.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Usuarios.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevoUsuario.resources
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\vb-sistema-guardia-ifor.vbproj.GenerateResource.Cache
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.exe

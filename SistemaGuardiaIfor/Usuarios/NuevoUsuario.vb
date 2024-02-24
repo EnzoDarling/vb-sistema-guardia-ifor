@@ -1,54 +1,56 @@
 ﻿'IMPORTANDO LIBRERIAS
 Imports System.Data.OleDb
-
-
+Imports System.IO
 Public Class NuevoUsuario
-    'DECLARACION DE VARIABLES DE CONEXION
-    Dim conn As New OleDbConnection
-    Dim cmd As New OleDbCommand
-    Dim dt As New DataTable
-    Dim da As New OleDbDataAdapter(cmd)
+    Dim conn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Enzo\Github\vb-sistema-guardia-ifor\bdguardiaifor.mdb")
+    Dim i, rolval As Integer
     Private Sub NuevoUsuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Enzo\Sistema Guardia IFOR\bdguardiaifor.mdb"
+        Try
+            conn.Open()
+            ToolStripLabel1.Text = "Conectado"
+            ToolStripLabel1.ForeColor = Color.Green
+        Catch ex As Exception
+            ToolStripLabel1.Text = "Desconectado"
+            ToolStripLabel1.ForeColor = Color.Red
+        End Try
+        conn.Close()
+        Limpiar()
     End Sub
-
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim rol As Integer
-        Dim apellido, nombre, usuario, clave As String
-        apellido = Val(TextBox1.Text)
-        nombre = Val(TextBox2.Text)
-        usuario = Val(TextBox3.Text)
-        clave = Val(TextBox4.Text)
-
-        If IsNumeric(apellido) = True Or IsNumeric(nombre) = True Or IsNumeric(usuario) = True Or IsNumeric(clave) = True Then
-            apellido.ToString()
-            nombre.ToString()
-            usuario.ToString()
-            clave.ToString()
-        Else
-            apellido = 0
-            nombre = 0
-            usuario = 0
-            clave = 0
-        End If
-
-        If RadioButton1.Checked = True Then
-            rol = 1
-        ElseIf RadioButton2.Checked = True Then
-            rol = 2
-        ElseIf RadioButton3.Checked = True Then
-            rol = 3
+        Guardar()
+    End Sub
+    Sub Limpiar()
+        txtApellido.Clear()
+        txtNombre.Clear()
+        txtUsuario.Clear()
+        txtClave.Clear()
+    End Sub
+    Sub Guardar()
+        If rdAdmin.Checked = True Then
+            rolval = 1
+        ElseIf rdSupervisor.Checked - True Then
+            rolval = 2
+        ElseIf rdCargador.Checked = True Then
+            rolval = 3
         End If
         Try
             conn.Open()
-            cmd = conn.CreateCommand()
-            cmd.CommandType = CommandType.Text
-            cmd.CommandText = "insert into usuarios(apellido,nombre,usuario,clave,rol_id)values('" + apellido + "', '" + nombre + "', '" + usuario + "', '" + clave + "','" + rol + "')"
-            cmd.ExecuteNonQuery()
-            conn.Close()
-            MessageBox.Show("Se ha guardado el usuario con exito!", "Sistema de Guardia IFOR", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim cmd As New OleDb.OleDbCommand("INSERT INTO usuarios(`apellido`,`nombre`,`usuario`,`clave`,`rol_id`) values (@Apellido,@Nombre,@Usuario,@Clave,@Rol)", conn)
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@Apellido", txtApellido.Text)
+            cmd.Parameters.AddWithValue("@Nombre", txtNombre.Text)
+            cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text)
+            cmd.Parameters.AddWithValue("@Clave", txtClave.Text)
+            cmd.Parameters.AddWithValue("@Rol", rolval)
+            i = cmd.ExecuteNonQuery
+            If i > 0 Then
+                MessageBox.Show("Se guardo el usuario con exito!")
+            Else
+                MessageBox.Show("Hubo un error al guardar")
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+        conn.Close()
     End Sub
 End Class

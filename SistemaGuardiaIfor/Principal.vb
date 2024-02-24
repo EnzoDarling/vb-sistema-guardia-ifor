@@ -1,5 +1,5 @@
-﻿Public Class Principal
-
+﻿
+Public Class Principal
     Private Sub VerListaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerListaToolStripMenuItem.Click
         NuevoPersonal.Show()
     End Sub

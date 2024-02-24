@@ -72,7 +72,8 @@ Partial Class Principal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaGuardiaToolStripMenuItem, Me.PersonalEstToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.ImprimirToolStripMenuItem, Me.ConvertirToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 30)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(2, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -80,7 +81,7 @@ Partial Class Principal
         '
         Me.NuevaGuardiaToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevaGuardiaToolStripMenuItem.Name = "NuevaGuardiaToolStripMenuItem"
-        Me.NuevaGuardiaToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
+        Me.NuevaGuardiaToolStripMenuItem.Size = New System.Drawing.Size(116, 21)
         Me.NuevaGuardiaToolStripMenuItem.Text = "Nueva Guardia"
         '
         'PersonalEstToolStripMenuItem
@@ -88,19 +89,19 @@ Partial Class Principal
         Me.PersonalEstToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VerListaToolStripMenuItem, Me.VerListaToolStripMenuItem1})
         Me.PersonalEstToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PersonalEstToolStripMenuItem.Name = "PersonalEstToolStripMenuItem"
-        Me.PersonalEstToolStripMenuItem.Size = New System.Drawing.Size(97, 26)
+        Me.PersonalEstToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.PersonalEstToolStripMenuItem.Text = "Personal"
         '
         'VerListaToolStripMenuItem
         '
         Me.VerListaToolStripMenuItem.Name = "VerListaToolStripMenuItem"
-        Me.VerListaToolStripMenuItem.Size = New System.Drawing.Size(228, 26)
+        Me.VerListaToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
         Me.VerListaToolStripMenuItem.Text = "Agregar Personal"
         '
         'VerListaToolStripMenuItem1
         '
         Me.VerListaToolStripMenuItem1.Name = "VerListaToolStripMenuItem1"
-        Me.VerListaToolStripMenuItem1.Size = New System.Drawing.Size(228, 26)
+        Me.VerListaToolStripMenuItem1.Size = New System.Drawing.Size(189, 22)
         Me.VerListaToolStripMenuItem1.Text = "Ver Lista"
         '
         'UsuariosToolStripMenuItem
@@ -108,26 +109,26 @@ Partial Class Principal
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListaToolStripMenuItem, Me.NuevoUsuarioToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(96, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ListaToolStripMenuItem
         '
         Me.ListaToolStripMenuItem.Name = "ListaToolStripMenuItem"
-        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(203, 26)
+        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.ListaToolStripMenuItem.Text = "Gestionar"
         '
         'NuevoUsuarioToolStripMenuItem
         '
         Me.NuevoUsuarioToolStripMenuItem.Name = "NuevoUsuarioToolStripMenuItem"
-        Me.NuevoUsuarioToolStripMenuItem.Size = New System.Drawing.Size(203, 26)
+        Me.NuevoUsuarioToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.NuevoUsuarioToolStripMenuItem.Text = "Nuevo Usuario"
         '
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(91, 26)
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(73, 21)
         Me.ImprimirToolStripMenuItem.Text = "Imprimir"
         '
         'ConvertirToolStripMenuItem
@@ -135,19 +136,19 @@ Partial Class Principal
         Me.ConvertirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExcelToolStripMenuItem, Me.PDFToolStripMenuItem})
         Me.ConvertirToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConvertirToolStripMenuItem.Name = "ConvertirToolStripMenuItem"
-        Me.ConvertirToolStripMenuItem.Size = New System.Drawing.Size(98, 26)
+        Me.ConvertirToolStripMenuItem.Size = New System.Drawing.Size(79, 21)
         Me.ConvertirToolStripMenuItem.Text = "Convertir"
         '
         'ExcelToolStripMenuItem
         '
         Me.ExcelToolStripMenuItem.Name = "ExcelToolStripMenuItem"
-        Me.ExcelToolStripMenuItem.Size = New System.Drawing.Size(127, 26)
+        Me.ExcelToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.ExcelToolStripMenuItem.Text = "Excel"
         '
         'PDFToolStripMenuItem
         '
         Me.PDFToolStripMenuItem.Name = "PDFToolStripMenuItem"
-        Me.PDFToolStripMenuItem.Size = New System.Drawing.Size(127, 26)
+        Me.PDFToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.PDFToolStripMenuItem.Text = "PDF"
         '
         'AyudaToolStripMenuItem
@@ -155,43 +156,46 @@ Partial Class Principal
         Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InstructivoToolStripMenuItem, Me.InformacionToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(75, 26)
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(60, 21)
         Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'InstructivoToolStripMenuItem
         '
         Me.InstructivoToolStripMenuItem.Name = "InstructivoToolStripMenuItem"
-        Me.InstructivoToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.InstructivoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InstructivoToolStripMenuItem.Text = "Instructivo"
         '
         'InformacionToolStripMenuItem
         '
         Me.InformacionToolStripMenuItem.Name = "InformacionToolStripMenuItem"
-        Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InformacionToolStripMenuItem.Text = "Informacion"
         '
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 91)
+        Me.Label1.Location = New System.Drawing.Point(9, 74)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(139, 24)
+        Me.Label1.Size = New System.Drawing.Size(111, 18)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Buscar Guardia"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(157, 91)
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(124, 71)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(214, 36)
+        Me.TextBox1.Size = New System.Drawing.Size(162, 30)
         Me.TextBox1.TabIndex = 3
         '
         'IdDataGridViewTextBoxColumn
@@ -246,9 +250,10 @@ Partial Class Principal
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Jerarquia, Me.Apellido, Me.Nombre, Me.Turno, Me.Fecha, Me.Funcion})
         Me.ListView1.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.ListView1.Location = New System.Drawing.Point(16, 162)
+        Me.ListView1.Location = New System.Drawing.Point(12, 132)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1039, 401)
+        Me.ListView1.Size = New System.Drawing.Size(780, 327)
         Me.ListView1.TabIndex = 4
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
@@ -262,14 +267,15 @@ Partial Class Principal
         '
         'Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 582)
+        Me.ClientSize = New System.Drawing.Size(800, 473)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Principal"
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
