@@ -24,8 +24,9 @@ Partial Class Personal
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.ListView1 = New System.Windows.Forms.ListView
         Me.Label2 = New System.Windows.Forms.Label
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -47,15 +48,6 @@ Partial Class Personal
         Me.TextBox1.Size = New System.Drawing.Size(184, 36)
         Me.TextBox1.TabIndex = 2
         '
-        'ListView1
-        '
-        Me.ListView1.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.Location = New System.Drawing.Point(12, 162)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1032, 397)
-        Me.ListView1.TabIndex = 3
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -66,23 +58,33 @@ Partial Class Personal
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Buscar"
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(17, 175)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1014, 380)
+        Me.DataGridView1.TabIndex = 5
+        '
         'Personal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1056, 589)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Personal"
         Me.Text = "Personal Estable"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents ListView1 As System.Windows.Forms.ListView
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class
