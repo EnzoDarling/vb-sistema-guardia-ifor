@@ -6,7 +6,111 @@ SistemaGuardiaIfor
 </name>
 </assembly>
 <members>
-<member name="P:SistemaGuardiaIfor.My.Resources.Resources.ResourceManager">
+<member name="T:SistemaGuardiaIfor.bdguardiaiforPersonal.personalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonal.personalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonal.personalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonal">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.personalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.UpdateUpdatedRows(SistemaGuardiaIfor.bdguardiaiforPersonal,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.UpdateInsertedRows(SistemaGuardiaIfor.bdguardiaiforPersonal,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.UpdateDeletedRows(SistemaGuardiaIfor.bdguardiaiforPersonal,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.UpdateAll(SistemaGuardiaIfor.bdguardiaiforPersonal)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSet.usuariosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSet.usuariosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSet.usuariosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.usuariosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SistemaGuardiaIfor.bdguardiaiforDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SistemaGuardiaIfor.bdguardiaiforDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SistemaGuardiaIfor.bdguardiaiforDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.UpdateAll(SistemaGuardiaIfor.bdguardiaiforDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:SistemaGuardiaIfor.bdguardiaiforDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:SistemaGuardiaIfor.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

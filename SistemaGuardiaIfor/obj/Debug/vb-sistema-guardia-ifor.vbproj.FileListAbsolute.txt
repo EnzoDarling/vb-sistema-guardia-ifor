@@ -6,7 +6,6 @@ D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\bin\Debug\SistemaGuard
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\bin\Debug\SistemaGuardiaIfor.xml
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\ResolveAssemblyReference.cache
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevaGuardia.resources
-D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.NuevoPersonal.resources
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Personal.resources
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.LoginForm1.resources
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Principal.resources

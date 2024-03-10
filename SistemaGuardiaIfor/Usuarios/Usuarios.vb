@@ -1,21 +1,55 @@
 ﻿Imports System.Data.OleDb
 Imports System.IO
 Public Class Usuarios
+    '-------------- DEFINICION DE VARIABLES --------------------
     Dim conn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Enzo\Github\vb-sistema-guardia-ifor\bdguardiaifor.mdb")
     Dim dr As OleDbDataReader
     Dim i, rolval, roltabla, IdVal As Integer
+    '------------ COMPRUEBA CONEXION Y MUESTRA DATOS DESACTIVANDO CONTROLES ---------
     Private Sub Usuarios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Try
-            conn.Open()
-            ToolStripLabel2.Text = "Conectado"
-            ToolStripLabel2.ForeColor = Color.Green
-        Catch ex As Exception
-            ToolStripLabel2.Text = "Desconectado"
-            ToolStripLabel2.ForeColor = Color.Red
-        End Try
-        conn.Close()
-        mostrarDatos()
+        DeshabilitarControles()
+        DeshabilitarBotones()
+        btnGuardar.Enabled = False
     End Sub
+    '--------- DESHABILITAR CONTROLES -------------
+    Sub DeshabilitarControles()
+        txtApellido.Enabled = False
+        txtNombre.Enabled = False
+        txtUsuario.Enabled = False
+        txtClave.Enabled = False
+        rdAdmin.Enabled = False
+        rdCargador.Enabled = False
+        rdSupervisor.Enabled = False
+    End Sub
+    '--------- HABILITAR CONTROLES --------------
+    Sub HabilitarControles()
+        txtApellido.Enabled = True
+        txtNombre.Enabled = True
+        txtUsuario.Enabled = True
+        txtClave.Enabled = True
+        rdAdmin.Enabled = True
+        rdCargador.Enabled = True
+        rdSupervisor.Enabled = True
+        btnGuardar.Enabled = True
+        Limpiar()
+    End Sub
+    '--------- HABILITAR BOTONES ---------
+    Sub HabilitarBotones()
+        btnEliminar.Enabled = True
+        btnModificar.Enabled = True
+    End Sub
+    '--------- DESHABILITAR BOTONES ---------
+    Sub DeshabilitarBotones()
+        btnEliminar.Enabled = False
+        btnModificar.Enabled = False
+    End Sub
+
+    Sub DeshabilitarBotonesNG()
+        btnGuardar.Enabled = False
+        btnNuevo.Enabled = False
+    End Sub
+
+    '--------- FUNCION MOSTRAR DATOS ---------
     Sub mostrarDatos()
         Try
             DataGridView1.Rows.Clear()
@@ -32,6 +66,7 @@ Public Class Usuarios
         conn.Close()
         Limpiar()
     End Sub
+    '--------- FUNCION LIMPIAR ---------
     Sub Limpiar()
         txtApellido.Clear()
         txtNombre.Clear()
@@ -41,10 +76,11 @@ Public Class Usuarios
         rdCargador.Checked = False
         rdSupervisor.Checked = False
     End Sub
+    '--------- FUNCION GUARDAR ---------
     Sub Guardar()
         If rdAdmin.Checked = True Then
             rolval = 1
-        ElseIf rdSupervisor.Checked - True Then
+        ElseIf rdSupervisor.Checked = True Then
             rolval = 2
         ElseIf rdCargador.Checked = True Then
             rolval = 3
@@ -69,11 +105,12 @@ Public Class Usuarios
         End Try
         conn.Close()
     End Sub
+    '--------- FUNCION MODIFICAR ---------
     Sub Modificar()
-        If MsgBox("Se va a eliminar un usuario del sistema ¿Está seguro de eliminar el usuario?", vbQuestion + vbYesNo) = vbYes Then
+        If MsgBox("Se va a modificar un usuario del sistema ¿Está seguro de eliminar el usuario?", vbQuestion + vbYesNo) = vbYes Then
             If rdAdmin.Checked = True Then
                 rolval = 1
-            ElseIf rdSupervisor.Checked - True Then
+            ElseIf rdSupervisor.Checked = True Then
                 rolval = 2
             ElseIf rdCargador.Checked = True Then
                 rolval = 3
@@ -101,7 +138,7 @@ Public Class Usuarios
         mostrarDatos()
         Limpiar()
     End Sub
-    
+    '--------- FUNCION ELIMINAR ---------
     Sub Eliminar()
         Try
             If MsgBox("Se va a eliminar un usuario del sistema ¿Está seguro de eliminar el usuario?", vbQuestion + vbYesNo) = vbYes Then
@@ -123,20 +160,27 @@ Public Class Usuarios
         mostrarDatos()
         Limpiar()
     End Sub
+    '--------- BOTON GUARDAR ---------
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Guardar()
         mostrarDatos()
         Limpiar()
+        DeshabilitarBotones()
+        DeshabilitarControles()
+        btnGuardar.Enabled = False
     End Sub
+    '--------- FUNCION CLICK TABLA DATOS ---------
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Limpiar()
+        Dim filaSelecIndice As DataGridViewRow
+        filaSelecIndice = DataGridView1.Rows(e.RowIndex)
+        HabilitarControles()
         roltabla = 0
-        txtId.Text = DataGridView1.CurrentRow.Cells(0).Value
-        txtApellido.Text = DataGridView1.CurrentRow.Cells(1).Value
-        txtNombre.Text = DataGridView1.CurrentRow.Cells(2).Value
-        txtUsuario.Text = DataGridView1.CurrentRow.Cells(3).Value
-        txtClave.Text = DataGridView1.CurrentRow.Cells(4).Value
-        roltabla = DataGridView1.CurrentRow.Cells(5).Value
+        txtId.Text = filaSelecIndice.Cells(0).Value
+        txtApellido.Text = filaSelecIndice.Cells(1).Value
+        txtNombre.Text = filaSelecIndice.Cells(2).Value
+        txtUsuario.Text = filaSelecIndice.Cells(3).Value
+        txtClave.Text = filaSelecIndice.Cells(4).Value
+        roltabla = filaSelecIndice.Cells(5).Value
         If roltabla = 1 Then
             rdAdmin.Checked = True
         ElseIf roltabla = 2 Then
@@ -144,14 +188,36 @@ Public Class Usuarios
         ElseIf roltabla = 3 Then
             rdCargador.Checked = True
         End If
-
+        btnGuardar.Enabled = False
+        HabilitarBotones()
     End Sub
-
+    '--------- BOTON ELIMINAR ---------
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
         Eliminar()
+        DeshabilitarControles()
+        DeshabilitarBotones()
     End Sub
-
+    '--------- BOTON MODIFICAR ---------
     Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
         Modificar()
+        DeshabilitarBotones()
+        DeshabilitarControles()
+    End Sub
+    '---------BOTON NUEVO ---------
+    Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
+        HabilitarControles()
+        DeshabilitarBotones()
+    End Sub
+
+    Private Sub btnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscar.Click
+        Me.UsuariosTableAdapter.FillBy(Me.BdguardiaiforDataSet.usuarios, txtBuscar.Text)
+    End Sub
+
+    Private Sub FillByToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FillByToolStripButton.Click
+        Try
+            Me.UsuariosTableAdapter.FillBy(Me.BdguardiaiforDataSet.usuarios, ApellidoToolStripTextBox.Text)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
     End Sub
 End Class

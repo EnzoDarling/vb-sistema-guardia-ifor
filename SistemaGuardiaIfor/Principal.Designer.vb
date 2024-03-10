@@ -26,8 +26,6 @@ Partial Class Principal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.NuevaGuardiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.PersonalEstToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.VerListaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.VerListaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ListaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -52,17 +50,33 @@ Partial Class Principal
         Me.IdturnosDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.FechaguardiaDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.NotificadoDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ListView1 = New System.Windows.Forms.ListView
-        Me.Jerarquia = New System.Windows.Forms.ColumnHeader
-        Me.Apellido = New System.Windows.Forms.ColumnHeader
-        Me.Nombre = New System.Windows.Forms.ColumnHeader
-        Me.Turno = New System.Windows.Forms.ColumnHeader
-        Me.Fecha = New System.Windows.Forms.ColumnHeader
-        Me.Funcion = New System.Windows.Forms.ColumnHeader
         Me.GuardiasBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label
+        Me.IdDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.IdpersonalDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.IdfuncionDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.IdturnosDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.FechaguardiaDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.NotificadoDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.GuardiasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FillByToolStrip = New System.Windows.Forms.ToolStrip
+        Me.ApellidoToolStripLabel = New System.Windows.Forms.ToolStripLabel
+        Me.ApellidoToolStripTextBox = New System.Windows.Forms.ToolStripTextBox
+        Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton
+        Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.PersonalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BdguardiaiforPersonal = New SistemaGuardiaIfor.bdguardiaiforPersonal
+        Me.PersonalTableAdapter = New SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.personalTableAdapter
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.MenuStrip1.SuspendLayout()
         CType(Me.GuardiasBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GuardiasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FillByToolStrip.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PersonalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BdguardiaiforPersonal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -72,7 +86,8 @@ Partial Class Principal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaGuardiaToolStripMenuItem, Me.PersonalEstToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.ImprimirToolStripMenuItem, Me.ConvertirToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 30)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(2, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1141, 25)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -80,68 +95,55 @@ Partial Class Principal
         '
         Me.NuevaGuardiaToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevaGuardiaToolStripMenuItem.Name = "NuevaGuardiaToolStripMenuItem"
-        Me.NuevaGuardiaToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
-        Me.NuevaGuardiaToolStripMenuItem.Text = "Nueva Guardia"
+        Me.NuevaGuardiaToolStripMenuItem.Size = New System.Drawing.Size(116, 21)
+        Me.NuevaGuardiaToolStripMenuItem.Text = "&Nueva Guardia"
         '
         'PersonalEstToolStripMenuItem
         '
-        Me.PersonalEstToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VerListaToolStripMenuItem, Me.VerListaToolStripMenuItem1})
         Me.PersonalEstToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PersonalEstToolStripMenuItem.Name = "PersonalEstToolStripMenuItem"
-        Me.PersonalEstToolStripMenuItem.Size = New System.Drawing.Size(97, 26)
-        Me.PersonalEstToolStripMenuItem.Text = "Personal"
-        '
-        'VerListaToolStripMenuItem
-        '
-        Me.VerListaToolStripMenuItem.Name = "VerListaToolStripMenuItem"
-        Me.VerListaToolStripMenuItem.Size = New System.Drawing.Size(228, 26)
-        Me.VerListaToolStripMenuItem.Text = "Agregar Personal"
-        '
-        'VerListaToolStripMenuItem1
-        '
-        Me.VerListaToolStripMenuItem1.Name = "VerListaToolStripMenuItem1"
-        Me.VerListaToolStripMenuItem1.Size = New System.Drawing.Size(228, 26)
-        Me.VerListaToolStripMenuItem1.Text = "Ver Lista"
+        Me.PersonalEstToolStripMenuItem.Size = New System.Drawing.Size(145, 21)
+        Me.PersonalEstToolStripMenuItem.Text = "Gestionar &Personal"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListaToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(96, 26)
-        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(145, 21)
+        Me.UsuariosToolStripMenuItem.Text = "Gestionar &Usuarios"
         '
         'ListaToolStripMenuItem
         '
         Me.ListaToolStripMenuItem.Name = "ListaToolStripMenuItem"
-        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(162, 26)
+        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ListaToolStripMenuItem.Text = "Gestionar"
         '
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(91, 26)
-        Me.ImprimirToolStripMenuItem.Text = "Imprimir"
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(73, 21)
+        Me.ImprimirToolStripMenuItem.Text = "&Imprimir"
         '
         'ConvertirToolStripMenuItem
         '
         Me.ConvertirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExcelToolStripMenuItem, Me.PDFToolStripMenuItem})
         Me.ConvertirToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConvertirToolStripMenuItem.Name = "ConvertirToolStripMenuItem"
-        Me.ConvertirToolStripMenuItem.Size = New System.Drawing.Size(98, 26)
-        Me.ConvertirToolStripMenuItem.Text = "Convertir"
+        Me.ConvertirToolStripMenuItem.Size = New System.Drawing.Size(79, 21)
+        Me.ConvertirToolStripMenuItem.Text = "&Convertir"
         '
         'ExcelToolStripMenuItem
         '
         Me.ExcelToolStripMenuItem.Name = "ExcelToolStripMenuItem"
-        Me.ExcelToolStripMenuItem.Size = New System.Drawing.Size(127, 26)
+        Me.ExcelToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.ExcelToolStripMenuItem.Text = "Excel"
         '
         'PDFToolStripMenuItem
         '
         Me.PDFToolStripMenuItem.Name = "PDFToolStripMenuItem"
-        Me.PDFToolStripMenuItem.Size = New System.Drawing.Size(127, 26)
+        Me.PDFToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.PDFToolStripMenuItem.Text = "PDF"
         '
         'AyudaToolStripMenuItem
@@ -149,34 +151,35 @@ Partial Class Principal
         Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InstructivoToolStripMenuItem, Me.InformacionToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(75, 26)
-        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(60, 21)
+        Me.AyudaToolStripMenuItem.Text = "&Ayuda"
         '
         'InstructivoToolStripMenuItem
         '
         Me.InstructivoToolStripMenuItem.Name = "InstructivoToolStripMenuItem"
-        Me.InstructivoToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.InstructivoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InstructivoToolStripMenuItem.Text = "Instructivo"
         '
         'InformacionToolStripMenuItem
         '
         Me.InformacionToolStripMenuItem.Name = "InformacionToolStripMenuItem"
-        Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InformacionToolStripMenuItem.Text = "Informacion"
         '
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 91)
+        Me.Label1.Location = New System.Drawing.Point(12, 19)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 24)
+        Me.Label1.Size = New System.Drawing.Size(55, 18)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Buscar"
         '
@@ -184,11 +187,11 @@ Partial Class Principal
         '
         Me.TextBox1.AccessibleDescription = "asd"
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(118, 88)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox1.Location = New System.Drawing.Point(93, 16)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 36)
+        Me.TextBox1.Size = New System.Drawing.Size(162, 29)
         Me.TextBox1.TabIndex = 3
         '
         'IdDataGridViewTextBoxColumn
@@ -239,53 +242,132 @@ Partial Class Principal
         '
         Me.NotificadoDataGridViewTextBoxColumn1.Name = "NotificadoDataGridViewTextBoxColumn1"
         '
-        'ListView1
-        '
-        Me.ListView1.AccessibleName = ""
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Jerarquia, Me.Apellido, Me.Nombre, Me.Turno, Me.Fecha, Me.Funcion})
-        Me.ListView1.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.ListView1.Location = New System.Drawing.Point(16, 162)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1039, 402)
-        Me.ListView1.TabIndex = 4
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
-        'Jerarquia
-        '
-        Me.Jerarquia.DisplayIndex = 1
-        '
-        'Apellido
-        '
-        Me.Apellido.DisplayIndex = 0
-        '
         'Label2
         '
+        Me.Label2.AllowDrop = True
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(460, 129)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(493, 76)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(148, 22)
+        Me.Label2.Size = New System.Drawing.Size(133, 19)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Lista de Guardia"
         '
+        'IdDataGridViewTextBoxColumn2
+        '
+        Me.IdDataGridViewTextBoxColumn2.Name = "IdDataGridViewTextBoxColumn2"
+        '
+        'IdpersonalDataGridViewTextBoxColumn2
+        '
+        Me.IdpersonalDataGridViewTextBoxColumn2.Name = "IdpersonalDataGridViewTextBoxColumn2"
+        '
+        'IdfuncionDataGridViewTextBoxColumn2
+        '
+        Me.IdfuncionDataGridViewTextBoxColumn2.Name = "IdfuncionDataGridViewTextBoxColumn2"
+        '
+        'IdturnosDataGridViewTextBoxColumn2
+        '
+        Me.IdturnosDataGridViewTextBoxColumn2.Name = "IdturnosDataGridViewTextBoxColumn2"
+        '
+        'FechaguardiaDataGridViewTextBoxColumn2
+        '
+        Me.FechaguardiaDataGridViewTextBoxColumn2.Name = "FechaguardiaDataGridViewTextBoxColumn2"
+        '
+        'NotificadoDataGridViewTextBoxColumn2
+        '
+        Me.NotificadoDataGridViewTextBoxColumn2.Name = "NotificadoDataGridViewTextBoxColumn2"
+        '
+        'FillByToolStrip
+        '
+        Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ApellidoToolStripLabel, Me.ApellidoToolStripTextBox, Me.FillByToolStripButton})
+        Me.FillByToolStrip.Location = New System.Drawing.Point(0, 25)
+        Me.FillByToolStrip.Name = "FillByToolStrip"
+        Me.FillByToolStrip.Size = New System.Drawing.Size(1110, 25)
+        Me.FillByToolStrip.TabIndex = 7
+        Me.FillByToolStrip.Text = "FillByToolStrip"
+        Me.FillByToolStrip.Visible = False
+        '
+        'ApellidoToolStripLabel
+        '
+        Me.ApellidoToolStripLabel.Name = "ApellidoToolStripLabel"
+        Me.ApellidoToolStripLabel.Size = New System.Drawing.Size(52, 22)
+        Me.ApellidoToolStripLabel.Text = "apellido:"
+        '
+        'ApellidoToolStripTextBox
+        '
+        Me.ApellidoToolStripTextBox.Name = "ApellidoToolStripTextBox"
+        Me.ApellidoToolStripTextBox.Size = New System.Drawing.Size(100, 25)
+        '
+        'FillByToolStripButton
+        '
+        Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillByToolStripButton.Name = "FillByToolStripButton"
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(39, 22)
+        Me.FillByToolStripButton.Text = "FillBy"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.DataGridView1)
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(12, 126)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1104, 493)
+        Me.Panel1.TabIndex = 8
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(441, 46)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(246, 24)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Sistema de Guardia IFOR"
+        '
+        'BdguardiaiforPersonal
+        '
+        Me.BdguardiaiforPersonal.DataSetName = "bdguardiaiforPersonal"
+        Me.BdguardiaiforPersonal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PersonalTableAdapter
+        '
+        Me.PersonalTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(15, 126)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(1077, 361)
+        Me.DataGridView1.TabIndex = 6
+        '
         'Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 582)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1141, 625)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.FillByToolStrip)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Principal"
         Me.Text = "Sistema de Guardia IFOR"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.GuardiasBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GuardiasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FillByToolStrip.ResumeLayout(False)
+        Me.FillByToolStrip.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PersonalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BdguardiaiforPersonal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -304,8 +386,6 @@ Partial Class Principal
     Friend WithEvents IdturnosDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaguardiaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NotificadoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents VerListaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VerListaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents IdDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents IdpersonalDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents IdfuncionDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -313,11 +393,6 @@ Partial Class Principal
     Friend WithEvents FechaguardiaDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NotificadoDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GuardiasBindingSource2 As System.Windows.Forms.BindingSource
-    Friend WithEvents ListView1 As System.Windows.Forms.ListView
-    Friend WithEvents Jerarquia As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Apellido As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Nombre As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Turno As System.Windows.Forms.ColumnHeader
     Friend WithEvents ExcelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PDFToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents InstructivoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -325,7 +400,22 @@ Partial Class Principal
     Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ListaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Fecha As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Funcion As System.Windows.Forms.ColumnHeader
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents BdguardiaiforPersonal As SistemaGuardiaIfor.bdguardiaiforPersonal
+    Friend WithEvents PersonalBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents PersonalTableAdapter As SistemaGuardiaIfor.bdguardiaiforPersonalTableAdapters.personalTableAdapter
+    Friend WithEvents FillByToolStrip As System.Windows.Forms.ToolStrip
+    Friend WithEvents ApellidoToolStripLabel As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents ApellidoToolStripTextBox As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents FillByToolStripButton As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents GuardiasBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents IdDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IdpersonalDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IdfuncionDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IdturnosDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FechaguardiaDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NotificadoDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class
