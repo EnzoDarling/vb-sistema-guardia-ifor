@@ -90,15 +90,18 @@ Partial Class LoginForm1
         '
         'OK
         '
+        Me.OK.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.OK.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OK.Location = New System.Drawing.Point(177, 208)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 34)
         Me.OK.TabIndex = 4
         Me.OK.Text = "&Ingresar"
+        Me.OK.UseVisualStyleBackColor = False
         '
         'Cancel
         '
+        Me.Cancel.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cancel.Location = New System.Drawing.Point(392, 208)
@@ -106,12 +109,14 @@ Partial Class LoginForm1
         Me.Cancel.Size = New System.Drawing.Size(94, 34)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancelar"
+        Me.Cancel.UseVisualStyleBackColor = False
         '
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(649, 254)
         Me.Controls.Add(Me.Cancel)

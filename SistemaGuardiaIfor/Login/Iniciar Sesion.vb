@@ -32,4 +32,8 @@ Public Class LoginForm1
 
         End If
     End Sub
+
+    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
+        Me.Close()
+    End Sub
 End Class

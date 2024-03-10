@@ -3,7 +3,7 @@ Imports System.IO
 Public Class Usuarios
     Dim conn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Enzo\Github\vb-sistema-guardia-ifor\bdguardiaifor.mdb")
     Dim dr As OleDbDataReader
-    Dim i, rolval As Integer
+    Dim i, rolval, roltabla, IdVal As Integer
     Private Sub Usuarios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             conn.Open()
@@ -27,7 +27,7 @@ Public Class Usuarios
             End While
             dr.Close()
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MsgBox(ex.Message, vbCritical, MsgBoxStyle.Critical)
         End Try
         conn.Close()
         Limpiar()
@@ -37,6 +37,9 @@ Public Class Usuarios
         txtNombre.Clear()
         txtUsuario.Clear()
         txtClave.Clear()
+        rdAdmin.Checked = False
+        rdCargador.Checked = False
+        rdSupervisor.Checked = False
     End Sub
     Sub Guardar()
         If rdAdmin.Checked = True Then
@@ -57,48 +60,48 @@ Public Class Usuarios
             cmd.Parameters.AddWithValue("@Rol", rolval)
             i = cmd.ExecuteNonQuery
             If i > 0 Then
-                MessageBox.Show("Se guardo el usuario con exito!")
+                MsgBox("Se guardo el usuario con exito!", vbInformation, MsgBoxStyle.Information)
             Else
-                MessageBox.Show("Hubo un error al guardar")
+                MsgBox("Hubo un error al guardar", vbCritical, MsgBoxStyle.Critical)
             End If
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MsgBox(ex.Message, vbCritical, MsgBoxStyle.Critical)
         End Try
         conn.Close()
     End Sub
     Sub Modificar()
-        If rdAdmin.Checked = True Then
-            rolval = 1
-        ElseIf rdSupervisor.Checked - True Then
-            rolval = 2
-        ElseIf rdCargador.Checked = True Then
-            rolval = 3
-        End If
-        Try
-
-            If MsgBox("Se va a modificar un usuario del sistema, ¿Esta seguro de modificar el usuario?", vbQuestion + vbYesNo) = vbYes Then
-                conn.Open()
-                Dim cmd As New OleDb.OleDbCommand("UPDATE usuarios SET `apellido`=@Apellido,`nombre`=@Nombre,`usuario`=@Usuario,`clave`=@Clave,`rol_id`=@Rol WHERE `IdUsuario`=@Id", conn)
+        If MsgBox("Se va a eliminar un usuario del sistema ¿Está seguro de eliminar el usuario?", vbQuestion + vbYesNo) = vbYes Then
+            If rdAdmin.Checked = True Then
+                rolval = 1
+            ElseIf rdSupervisor.Checked - True Then
+                rolval = 2
+            ElseIf rdCargador.Checked = True Then
+                rolval = 3
+            End If
+            IdVal = CInt(txtId.Text)
+            conn.Open()
+            Dim command As String
+            command = "UPDATE usuarios SET `apellido`=@Apellido,`nombre`=@Nombre,`usuario`=@Usuario,`clave`=@Clave,`rol_id`=@Rol WHERE `IdUsuario`=@Id"
+            Dim cmd As OleDbCommand = New OleDbCommand(command, conn)
+            Try
                 cmd.Parameters.Clear()
-                cmd.Parameters.AddWithValue("@Id", txtId.Text)
+                cmd.Parameters.AddWithValue("@Id", IdVal)
                 cmd.Parameters.AddWithValue("@Apellido", txtApellido.Text)
                 cmd.Parameters.AddWithValue("@Nombre", txtNombre.Text)
                 cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text)
                 cmd.Parameters.AddWithValue("@Clave", txtClave.Text)
                 cmd.Parameters.AddWithValue("@Rol", rolval)
-                i = cmd.ExecuteNonQuery
-                If i > 0 Then
-                    MessageBox.Show("Se modifico el usuario con exito!")
-                Else
-                    MessageBox.Show("Hubo un error al modificar")
-                End If
-            End If
-
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-        conn.Close()
+                cmd.ExecuteNonQuery()
+                cmd.Dispose()
+                conn.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
+        mostrarDatos()
+        Limpiar()
     End Sub
+    
     Sub Eliminar()
         Try
             If MsgBox("Se va a eliminar un usuario del sistema ¿Está seguro de eliminar el usuario?", vbQuestion + vbYesNo) = vbYes Then
@@ -108,13 +111,13 @@ Public Class Usuarios
                 cmd.Parameters.AddWithValue("@Id", txtId.Text)
                 i = cmd.ExecuteNonQuery
                 If i > 0 Then
-                    MessageBox.Show("Se elimino el usuario con exito!")
+                    MsgBox("Se elimino el usuario con exito!", vbInformation, MsgBoxStyle.Information)
                 Else
-                    MessageBox.Show("Hubo un error al eliminar")
+                    MsgBox("Hubo un error al eliminar", vbCritical, MsgBoxStyle.Critical)
                 End If
             End If
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MsgBox(ex.Message, vbCritical, MsgBoxStyle.Critical)
         End Try
         conn.Close()
         mostrarDatos()
@@ -126,17 +129,19 @@ Public Class Usuarios
         Limpiar()
     End Sub
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        Limpiar()
+        roltabla = 0
         txtId.Text = DataGridView1.CurrentRow.Cells(0).Value
         txtApellido.Text = DataGridView1.CurrentRow.Cells(1).Value
         txtNombre.Text = DataGridView1.CurrentRow.Cells(2).Value
         txtUsuario.Text = DataGridView1.CurrentRow.Cells(3).Value
         txtClave.Text = DataGridView1.CurrentRow.Cells(4).Value
-        rolval = DataGridView1.CurrentRow.Cells(5).Value
-        If rolval = 1 Then
+        roltabla = DataGridView1.CurrentRow.Cells(5).Value
+        If roltabla = 1 Then
             rdAdmin.Checked = True
-        ElseIf rolval = 2 Then
+        ElseIf roltabla = 2 Then
             rdSupervisor.Checked = True
-        ElseIf rolval = 3 Then
+        ElseIf roltabla = 3 Then
             rdCargador.Checked = True
         End If
 

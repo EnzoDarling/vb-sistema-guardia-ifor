@@ -428,7 +428,7 @@ Partial Class Usuarios
         '
         Me.txtId.Location = New System.Drawing.Point(151, 71)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(100, 28)
+        Me.txtId.Size = New System.Drawing.Size(204, 28)
         Me.txtId.TabIndex = 26
         Me.txtId.Visible = False
         '
