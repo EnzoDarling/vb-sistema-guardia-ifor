@@ -82,17 +82,17 @@ Partial Class Usuarios
         Me.Label1.Location = New System.Drawing.Point(147, 21)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(232, 22)
+        Me.Label1.Size = New System.Drawing.Size(293, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "GESTION DE USUARIOS"
         '
         'txtBuscar
         '
         Me.txtBuscar.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBuscar.Location = New System.Drawing.Point(5, 43)
+        Me.txtBuscar.Location = New System.Drawing.Point(19, 43)
         Me.txtBuscar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(157, 24)
+        Me.txtBuscar.Size = New System.Drawing.Size(157, 28)
         Me.txtBuscar.TabIndex = 2
         '
         'ToolStripLabel1
@@ -110,12 +110,12 @@ Partial Class Usuarios
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdUsuarioDataGridViewTextBoxColumn, Me.ApellidoDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.UsuarioDataGridViewTextBoxColumn, Me.ClaveDataGridViewTextBoxColumn, Me.RolidDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.UsuariosBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(5, 119)
+        Me.DataGridView1.Location = New System.Drawing.Point(9, 147)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(546, 384)
+        Me.DataGridView1.Size = New System.Drawing.Size(546, 358)
         Me.DataGridView1.TabIndex = 5
         '
         'IdUsuarioDataGridViewTextBoxColumn
@@ -178,7 +178,7 @@ Partial Class Usuarios
         Me.Label3.Location = New System.Drawing.Point(16, 122)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 17)
+        Me.Label3.Size = New System.Drawing.Size(79, 22)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Apellido"
         '
@@ -189,7 +189,7 @@ Partial Class Usuarios
         Me.Label4.Location = New System.Drawing.Point(16, 173)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 17)
+        Me.Label4.Size = New System.Drawing.Size(78, 22)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Nombre"
         '
@@ -200,7 +200,7 @@ Partial Class Usuarios
         Me.Label5.Location = New System.Drawing.Point(16, 219)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 17)
+        Me.Label5.Size = New System.Drawing.Size(74, 22)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Usuario"
         '
@@ -211,7 +211,7 @@ Partial Class Usuarios
         Me.Label6.Location = New System.Drawing.Point(16, 266)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(84, 17)
+        Me.Label6.Size = New System.Drawing.Size(107, 22)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Contraseña"
         '
@@ -222,7 +222,7 @@ Partial Class Usuarios
         Me.Label8.Location = New System.Drawing.Point(16, 320)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(30, 17)
+        Me.Label8.Size = New System.Drawing.Size(39, 22)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Rol"
         '
@@ -265,10 +265,10 @@ Partial Class Usuarios
         '
         Me.rdAdmin.AutoSize = True
         Me.rdAdmin.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdAdmin.Location = New System.Drawing.Point(20, 362)
+        Me.rdAdmin.Location = New System.Drawing.Point(7, 362)
         Me.rdAdmin.Margin = New System.Windows.Forms.Padding(4)
         Me.rdAdmin.Name = "rdAdmin"
-        Me.rdAdmin.Size = New System.Drawing.Size(116, 21)
+        Me.rdAdmin.Size = New System.Drawing.Size(148, 26)
         Me.rdAdmin.TabIndex = 16
         Me.rdAdmin.TabStop = True
         Me.rdAdmin.Text = "Administrador"
@@ -281,7 +281,7 @@ Partial Class Usuarios
         Me.rdSupervisor.Location = New System.Drawing.Point(151, 362)
         Me.rdSupervisor.Margin = New System.Windows.Forms.Padding(4)
         Me.rdSupervisor.Name = "rdSupervisor"
-        Me.rdSupervisor.Size = New System.Drawing.Size(96, 21)
+        Me.rdSupervisor.Size = New System.Drawing.Size(122, 26)
         Me.rdSupervisor.TabIndex = 17
         Me.rdSupervisor.TabStop = True
         Me.rdSupervisor.Text = "Supervisor"
@@ -294,7 +294,7 @@ Partial Class Usuarios
         Me.rdCargador.Location = New System.Drawing.Point(268, 362)
         Me.rdCargador.Margin = New System.Windows.Forms.Padding(4)
         Me.rdCargador.Name = "rdCargador"
-        Me.rdCargador.Size = New System.Drawing.Size(87, 21)
+        Me.rdCargador.Size = New System.Drawing.Size(110, 26)
         Me.rdCargador.TabIndex = 18
         Me.rdCargador.TabStop = True
         Me.rdCargador.Text = "Cargador"
@@ -306,7 +306,7 @@ Partial Class Usuarios
         Me.txtApellido.Location = New System.Drawing.Point(151, 119)
         Me.txtApellido.Margin = New System.Windows.Forms.Padding(4)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(204, 24)
+        Me.txtApellido.Size = New System.Drawing.Size(204, 28)
         Me.txtApellido.TabIndex = 19
         '
         'txtNombre
@@ -315,7 +315,7 @@ Partial Class Usuarios
         Me.txtNombre.Location = New System.Drawing.Point(151, 173)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(204, 24)
+        Me.txtNombre.Size = New System.Drawing.Size(204, 28)
         Me.txtNombre.TabIndex = 20
         '
         'txtUsuario
@@ -324,7 +324,7 @@ Partial Class Usuarios
         Me.txtUsuario.Location = New System.Drawing.Point(151, 219)
         Me.txtUsuario.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(204, 24)
+        Me.txtUsuario.Size = New System.Drawing.Size(204, 28)
         Me.txtUsuario.TabIndex = 21
         '
         'txtClave
@@ -333,7 +333,7 @@ Partial Class Usuarios
         Me.txtClave.Location = New System.Drawing.Point(151, 266)
         Me.txtClave.Margin = New System.Windows.Forms.Padding(4)
         Me.txtClave.Name = "txtClave"
-        Me.txtClave.Size = New System.Drawing.Size(204, 24)
+        Me.txtClave.Size = New System.Drawing.Size(204, 28)
         Me.txtClave.TabIndex = 22
         '
         'Panel1
@@ -352,17 +352,17 @@ Partial Class Usuarios
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(5, 12)
+        Me.Label2.Location = New System.Drawing.Point(19, 12)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 17)
+        Me.Label2.Size = New System.Drawing.Size(74, 22)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Buscar:"
         '
         'btnBuscar
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(169, 43)
+        Me.btnBuscar.Location = New System.Drawing.Point(207, 43)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
+        Me.btnBuscar.Size = New System.Drawing.Size(116, 29)
         Me.btnBuscar.TabIndex = 7
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
@@ -370,9 +370,9 @@ Partial Class Usuarios
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(269, 71)
+        Me.Label7.Location = New System.Drawing.Point(267, 101)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(121, 17)
+        Me.Label7.Size = New System.Drawing.Size(156, 22)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Lista de Usuarios"
         '
@@ -382,7 +382,7 @@ Partial Class Usuarios
         Me.TextBox2.Location = New System.Drawing.Point(151, 126)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(204, 24)
+        Me.TextBox2.Size = New System.Drawing.Size(204, 28)
         Me.TextBox2.TabIndex = 19
         '
         'TextBox3
@@ -391,7 +391,7 @@ Partial Class Usuarios
         Me.TextBox3.Location = New System.Drawing.Point(151, 211)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(204, 24)
+        Me.TextBox3.Size = New System.Drawing.Size(204, 28)
         Me.TextBox3.TabIndex = 20
         '
         'TextBox5
@@ -400,7 +400,7 @@ Partial Class Usuarios
         Me.TextBox5.Location = New System.Drawing.Point(151, 357)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(204, 24)
+        Me.TextBox5.Size = New System.Drawing.Size(204, 28)
         Me.TextBox5.TabIndex = 22
         '
         'RadioButton1
@@ -444,7 +444,7 @@ Partial Class Usuarios
         '
         Me.txtId.Location = New System.Drawing.Point(151, 71)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(204, 24)
+        Me.txtId.Size = New System.Drawing.Size(204, 28)
         Me.txtId.TabIndex = 26
         Me.txtId.Visible = False
         '
@@ -453,7 +453,7 @@ Partial Class Usuarios
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(17, 71)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(19, 17)
+        Me.Label9.Size = New System.Drawing.Size(27, 22)
         Me.Label9.TabIndex = 27
         Me.Label9.Text = "Id"
         Me.Label9.Visible = False
@@ -484,7 +484,7 @@ Partial Class Usuarios
         'ApellidoToolStripLabel
         '
         Me.ApellidoToolStripLabel.Name = "ApellidoToolStripLabel"
-        Me.ApellidoToolStripLabel.Size = New System.Drawing.Size(52, 22)
+        Me.ApellidoToolStripLabel.Size = New System.Drawing.Size(67, 22)
         Me.ApellidoToolStripLabel.Text = "apellido:"
         '
         'ApellidoToolStripTextBox
@@ -496,7 +496,7 @@ Partial Class Usuarios
         '
         Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillByToolStripButton.Name = "FillByToolStripButton"
-        Me.FillByToolStripButton.Size = New System.Drawing.Size(39, 22)
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(48, 22)
         Me.FillByToolStripButton.Text = "FillBy"
         '
         'UsuariosTableAdapter
@@ -505,7 +505,7 @@ Partial Class Usuarios
         '
         'Usuarios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(947, 593)
         Me.Controls.Add(Me.FillByToolStrip)

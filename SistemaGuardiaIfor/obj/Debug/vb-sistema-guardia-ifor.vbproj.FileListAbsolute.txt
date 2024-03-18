@@ -13,3 +13,4 @@ D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuard
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.Usuarios.resources
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\vb-sistema-guardia-ifor.vbproj.GenerateResource.Cache
 D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.exe
+D:\Enzo\Github\vb-sistema-guardia-ifor\SistemaGuardiaIfor\obj\Debug\SistemaGuardiaIfor.ModificarGuardia.resources

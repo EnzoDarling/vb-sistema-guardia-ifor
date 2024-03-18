@@ -38,41 +38,39 @@ Partial Class NuevaGuardia
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(216, 11)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(288, 14)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 17)
+        Me.Label1.Size = New System.Drawing.Size(200, 22)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "&Nueva Guardia"
+        Me.Label1.Text = "AGREGAR GUARDIA"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(10, 64)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(13, 79)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 17)
+        Me.Label2.Size = New System.Drawing.Size(185, 22)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Elegir Personal:"
+        Me.Label2.Text = "LIstado del Personal"
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(298, 399)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Location = New System.Drawing.Point(434, 478)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 30)
+        Me.Button1.Size = New System.Drawing.Size(152, 50)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "&Guardar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ListView1
         '
-        Me.ListView1.Location = New System.Drawing.Point(13, 106)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListView1.Location = New System.Drawing.Point(17, 130)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(286, 243)
+        Me.ListView1.Size = New System.Drawing.Size(380, 398)
         Me.ListView1.TabIndex = 4
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
@@ -80,10 +78,9 @@ Partial Class NuevaGuardia
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(348, 68)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(430, 81)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 17)
+        Me.Label3.Size = New System.Drawing.Size(82, 22)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Función:"
         '
@@ -91,20 +88,19 @@ Partial Class NuevaGuardia
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Ayudante de Guardia", "Cabo de Guardia", "1er Reten", "2do Reten"})
-        Me.ComboBox1.Location = New System.Drawing.Point(440, 64)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Location = New System.Drawing.Point(587, 79)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(92, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(237, 24)
         Me.ComboBox1.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(342, 126)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(432, 155)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 17)
+        Me.Label4.Size = New System.Drawing.Size(117, 22)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Elegir Turno:"
         '
@@ -112,16 +108,15 @@ Partial Class NuevaGuardia
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"24hs.", "Turno Diurno", "Turno Nocturno"})
-        Me.ComboBox2.Location = New System.Drawing.Point(440, 126)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox2.Location = New System.Drawing.Point(587, 155)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(92, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(237, 24)
         Me.ComboBox2.TabIndex = 8
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(440, 187)
-        Me.MonthCalendar1.Margin = New System.Windows.Forms.Padding(7, 7, 7, 7)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(587, 230)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 9
         '
@@ -129,18 +124,17 @@ Partial Class NuevaGuardia
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(338, 201)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(432, 230)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 17)
+        Me.Label5.Size = New System.Drawing.Size(122, 22)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Elegir Fecha:"
         '
         'NuevaGuardia
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(714, 446)
+        Me.ClientSize = New System.Drawing.Size(890, 562)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.ComboBox2)
@@ -151,7 +145,7 @@ Partial Class NuevaGuardia
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "NuevaGuardia"
         Me.Text = "Nueva Guardia"
         Me.ResumeLayout(False)
