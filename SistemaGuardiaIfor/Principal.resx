@@ -120,6 +120,60 @@
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NuevaGuardiaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJdJREFUSEvt
+        lcsJgDAQRFOapViKnVmKpWhGHJDNbkaiaA4+eJgh+7mZ1BNTdjnE+VEwcM1iOL6wacmQPQ+xjofeHUQv
+        ZoTMWa+R1pZT1ISwqBXZ//oCZiWxuSBqUBKbC2SBoL8FzEpic0HUoCQ2F8gCQX8LmD09anc7toDZ06N2
+        tyMLBN8vUL/rK2JGCB6LO0vkg/NjSGkDknq3C3ZxY4AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PersonalEstToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAN5JREFUSEvt
+        k9sNwjAMRTMKozAKo7AJozAKo4BPxZFch6jpF/3oka5U3+BHHdpODs0l9Ai9Q6/vM56M/ClIoEAVBS1m
+        8+pPYfIzRCLiWQ+uIRtkfwomIoki4ltxBsZKf4pfDfLEYlz9TfI6KJxXxPrgFsrF9aeor6/yZdqw+tOQ
+        cA9ZIE/oANU/Bk7OClwDkyJizvLlAx53Uv0VHFLEvW6J31IYGMpchujuI/8jTKShE5GAiP0IFblQa+gv
+        2N2JtnCNFgM8G2R/QXMvNc+4+t3BXsnI7w72Skb+yd9o7QMCmJ3FrBDaOAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="UsuariosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAMtJREFUSEvt
+        ku0JAkEMRLcUS7EUS7ETS7GUK0XzwIFh2U9374fgwOMkXia5JOmvn9AleASv4Pj8JrZFGGGcQ6EtRdR5
+        iWewLDotmQP/LatVAJbFGErGwPiWNbLka0AjxOAeTAkjkmTsnWOeFwfiW6Qd8QU0opES70qdk+S78GTF
+        pgrweeqshkbghZ3qAdyCUkKOFjm9g17ngvd0RTw9r7lgN+nhRXRl0DxTNxiBkSIvoFhRnjxCXoCln6Lh
+        EX0rv77miFZE56eZV5TSGxPwqNySSwZPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ImprimirToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAI1JREFUSEvt
+        j9EJgDAMBTuKoziKo7iZoziK5oSItKlNKvijB/cRzHux6ecJW9AwVsmdYbzBjx2YxEXUUFSydAxiwSxa
+        oR45UrCKfByPKQYZpJgOXlKg13vg5xCqPU8O6AvAfUBnr0o+n9QWvSr5fHJdvtrCymCBtYQtrAw28S66
+        C3NeO+A1jFVy508PKe31dK2Vn2fkTgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ConvertirToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAALdJREFUSEvd
+        lFEOgkAQQ/doHsWjeDOP4lF0SyyplWaAhR9eMllrpzMChnZpbr1evd4bCxlkS569lgasKSwpYfNWVucO
+        X+BGbCyIOTdUP751n1TWwOfMuKEaJwbw4SUNNPeDG6pxYoBqPw9ZwP+3fs9zeIECvXRFAJ+9f8IN1fx1
+        BFqvSH2fM+NGbCyIOTdiY0HMuREbC2LOjZGXHbJ/0CR4gHuWxNc1G07j9AUj9xxVsveesy5Jax9AMsGI
+        4OcLIQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="AyudaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAR5JREFUSEvl
+        ktFtwzAMRD1KRskoHaWbdJSMklFaPUMvOMi0bOcv6AEEBJM8Ho9e/gXuLb5bPFr8tni2+OnfyL2NWwtJ
+        Z8FAai8BdUmQaiHj/dWCXNacQpIfNTHsSv3aYHH6KxFKCW6QtthHbnoXPR+V5IHznWRuwvcSeFoVQCKx
+        kCyFsIXDyy1sYtCItAMoZqytBr+Ar3sDEun3OBjl5HLbF2ggOTYljmzI4RucGeCWpccd5IkNpgfqUMQe
+        vA1CNpgeqGO2HXBAyeGBSv86IJhtqAvlj5IHrFbMA1ab6ED5B4kkGVUooNrQ7YnZhiv0EaLZPYTKiTP1
+        q9JschuVkedNDblL5AktkWAvGELtW1AtG3B4yAgGo/jQ70/HsvwBJSSHS/y7Kf4AAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="FillByToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>722, 58</value>
   </metadata>
